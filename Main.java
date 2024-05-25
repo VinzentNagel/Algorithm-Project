@@ -30,7 +30,7 @@ public class Main {
         Aggregator aggregator = new Aggregator();
         ArrayList<AggregatedRow> aggregatedRows = aggregator.aggregate(rows);
 
-        MergeSort.mergeSort(aggregatedRows);
+        Sorter.mergeSort(aggregatedRows);
 
         for (AggregatedRow aggregatedRow : aggregatedRows) {
             System.out.println(aggregatedRow.blockchain + " " + aggregatedRow.cryptocoin + " " + aggregatedRow.mining);
