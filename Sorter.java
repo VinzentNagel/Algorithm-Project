@@ -1,10 +1,8 @@
-package Projekt_Implementierung;
-
 import java.util.ArrayList;
 
 public class Sorter {
 
-    public static void mergeSort(ArrayList<AggregatedRow> aggregatedRows) {
+    private static void mergeSort(ArrayList<AggregatedRow> aggregatedRows) {
         int length = aggregatedRows.size();
         if (length < 2) {
             return;
@@ -24,7 +22,7 @@ public class Sorter {
         merge(aggregatedRows, leftSide, rightSide);
     }
 
-    public static void merge(ArrayList<AggregatedRow> aggregatedRows, ArrayList<AggregatedRow> leftSide, ArrayList<AggregatedRow> rightSide) {
+    private static void merge(ArrayList<AggregatedRow> aggregatedRows, ArrayList<AggregatedRow> leftSide, ArrayList<AggregatedRow> rightSide) {
         int leftIndex = 0;
         int rightIndex = 0;
         for (int i = 0; i < aggregatedRows.size(); i++) {

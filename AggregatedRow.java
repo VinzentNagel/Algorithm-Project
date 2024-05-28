@@ -1,5 +1,3 @@
-package Projekt_Implementierung;
-
 public class AggregatedRow {
     public String blockchain;
     public String cryptocoin;

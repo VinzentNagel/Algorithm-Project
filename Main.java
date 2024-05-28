@@ -1,5 +1,3 @@
-package Projekt_Implementierung;
-
 import java.util.ArrayList;
 
 public class Main {
@@ -30,7 +28,7 @@ public class Main {
         Aggregator aggregator = new Aggregator();
         ArrayList<AggregatedRow> aggregatedRows = aggregator.aggregate(rows);
 
-        Sorter.mergeSort(aggregatedRows);
+        Sorter.sort(aggregatedRows);
 
         for (AggregatedRow aggregatedRow : aggregatedRows) {
             System.out.println(aggregatedRow.blockchain + " " + aggregatedRow.cryptocoin + " " + aggregatedRow.mining);

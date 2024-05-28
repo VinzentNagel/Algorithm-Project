@@ -1,16 +1,11 @@
-package Projekt_Implementierung;
-
 import java.util.ArrayList;
 
 public class Aggregator {
 
-    public ArrayList<AggregatedRow> aggregatedRows;
-    
-    public Aggregator(){
-        this.aggregatedRows = new ArrayList<>();
-    }
 
     public ArrayList<AggregatedRow> aggregate (ArrayList<Row> rows){
+
+        ArrayList<AggregatedRow> aggregatedRows = new ArrayList<>();
 
         for (String blockchain : getBlockchains(rows)) {
             aggregatedRows.add(new AggregatedRow(blockchain, null, 0));
